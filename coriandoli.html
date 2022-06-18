@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Nuova Babilonia - Coriandoli</title>
+		<link rel="icon" type="ico" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			*
+			{
+				margin: 0;
+				padding: 0;
+				z-index: 1;
+			}
+
+			body
+			{
+			 	background: #000;
+			}
+
+			#coriandoli
+			{
+				display: none;
+				position: absolute;
+				top: 50%;
+				right: 10%;
+				color: #F00;
+				font-size: 50px;
+				font-style: italic;
+				font-family: "Times New Roman";
+			}
+
+			#back
+			{
+				display:none;
+				right: 10%;
+				position: absolute;
+				z-index: 0;
+			}
+
+			.a
+			{
+				display:none;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			setInterval(function()
+			{
+				if (document.getElementById("coriandoli").style.display=="block")
+					document.getElementById("coriandoli").style.display="none";
+				else
+					document.getElementById("coriandoli").style.display="block";
+			}, 700);
+
+			setInterval(function()
+			{
+				var elems = document.getElementsByTagName('img');
+
+   			 	for (var i = 1; i<elems.length; i++)
+   			 	{
+					elems[i].style.top = Math.floor(Math.random() * 80) + "%";
+					elems[i].style.left = Math.floor(Math.random() * 80) + "%";
+					elems[i].style.display="block";
+    			}
+			}, 1300);
+
+			setInterval(function()
+			{
+				document.getElementById("back").style.display="block";
+			}, 6000);
+		</script>
+		<div>
+			<p id="coriandoli">CORIANDOLI!!!!</p>
+			<img id="back" src="j.jpg" width="300px">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+			<img class="a" src="cor.gif">
+		</div>
+	</body>
+</html>
