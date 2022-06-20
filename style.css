@@ -1,6 +1,10 @@
-body
+*
 {
 	font-family: "Times New Roman";
+}
+
+body
+{	
 	color: #FF0;
 	max-width: 500px;
 	text-height: 40px;
